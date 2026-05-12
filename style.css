@@ -413,7 +413,7 @@ header{
 /* ------Responsive------------Responsive------------Responsive------------Responsive------------Responsive------ */
 
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
 
 svg.smallNav{
     display: block;
