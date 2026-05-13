@@ -1,91 +1,109 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 
 }
-body{
+
+body {
     background-color: black;
     color: antiquewhite;
     overflow-x: hidden;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-.logo::first-letter{
+
+.logo::first-letter {
     color: rgb(193, 42, 67);
     font-size: larger;
 }
-.logo{
+
+.logo {
     margin: 10px 0px 0px 9vw;
     width: 60vw;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
 }
-.nav{
+
+.nav {
     width: 50vw;
 }
-.nav ul{
+
+.nav ul {
     display: flex;
     justify-content: space-between;
     margin: 34px 5.8vw 60px 0px;
     list-style: none;
 }
-.nav ul li a{
+
+.nav ul li a {
     text-decoration: none;
     color: antiquewhite;
     position: relative;
 }
-.nav ul li a::after{
+
+.nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background-color:rgb(193, 42, 67)  ;
+    background-color: rgb(193, 42, 67);
     position: absolute;
     left: 0;
     bottom: -5px;
     transition: 0.8s;
-    
+
 }
-.nav ul li a:hover::after{
+
+.nav ul li a:hover::after {
     width: 100%;
     transition: 0.8s;
 }
-nav .smallNav{
+
+nav .smallNav {
     display: none;
 }
-.article1{
+
+.article1 {
     margin-left: 9vw;
 }
-.heading1{
+
+.heading1 {
     font-size: 30px;
 }
-.myimage{
-    height: 68vh; 
-    width: 45vw; 
+
+.myimage {
+    height: 68vh;
+    width: 45vw;
     border-radius: 30px;
 }
-.heading2,.heading4{
-    font-size:60px; 
+
+.heading2,
+.heading4 {
+    font-size: 60px;
     font-weight: 700;
 }
-.heading3{
-    color:rgb(193, 42, 67);
-    font-size:60px;
+
+.heading3 {
+    color: rgb(193, 42, 67);
+    font-size: 60px;
     font-weight: 700;
 }
-.section1{
+
+.section1 {
     display: flex;
     justify-content: space-between;
     margin-right: 5vw;
 }
-.button{
-   border: 1px solid black;
-   margin-right: 10px;
+
+.button {
+    border: 1px solid black;
+    margin-right: 10px;
 }
 
 
@@ -94,29 +112,37 @@ nav .smallNav{
 /* --------About section--------- */
 
 
-#section2{
+#section2 {
     display: flex;
     justify-content: space-between;
 }
-.aside2{
+
+.aside2 {
     margin-left: 9vw;
 }
-.article2{
+
+.article2 {
     margin: 0px 5vw 0px 5vw;
     text-align: justify;
 }
-.articleButton{
+
+.articleButton {
     display: flex;
-    margin:35px 5vw;
+    margin: 35px 5vw;
     width: 100%;
+    justify-content: center;
 }
-.aside2 img{
-    height: 550px; 
-    width: 30vw; 
+.articleButton>button {
+    color: #c12a43;
+}
+
+.aside2 img {
+    height: 550px;
+    width: 30vw;
     border-radius: 30px;
 }
 
-.articleButton0{
+.articleButton0 {
     color: antiquewhite;
     background-color: black;
     border: 0px;
@@ -127,114 +153,130 @@ nav .smallNav{
     position: relative;
 }
 
-.articleButton1::after{
+.articleButton1::after {
     content: "";
     width: 0%;
     height: 3px;
-    background-color:rgb(193, 42, 67) ;
+    background-color: rgb(193, 42, 67);
     position: absolute;
     left: 0;
     bottom: -4px;
     transition: 0.8s;
-    
+
 }
-.articleButton2::after{
+
+.articleButton2::after {
     content: "";
     width: 0%;
     height: 3px;
-    background-color:rgb(193, 42, 67) ;
+    background-color: rgb(193, 42, 67);
     position: absolute;
     left: 0;
     bottom: -4px;
     transition: 0.8s;
-    
+
 }
-.articleButton3::after{
+
+.articleButton3::after {
     content: "";
     width: 0%;
     height: 3px;
-    background-color:rgb(193, 42, 67) ;
+    background-color: rgb(193, 42, 67);
     position: absolute;
     left: 0;
     bottom: -4px;
     transition: 0.8s;
-    
+
 }
-.articleButton1.active::after{
+
+.articleButton1.active::after {
     width: 100%;
     transition: 0.8s;
 }
-.articleButton2.active::after{
+
+.articleButton2.active::after {
     width: 100%;
     transition: 0.8s;
 }
-.articleButton3.active::after{
+
+.articleButton3.active::after {
     width: 100%;
     transition: 0.8s;
 }
-.aboutpara{
-    font-size: 60px; 
+
+.aboutpara {
+    font-size: 60px;
     font-weight: 600;
 }
 
-.articleContent ul li{
+.articleContent ul li {
     margin-left: 5vw;
     font-size: small;
 
 }
-.articleContent li span{
-    color:rgb(193, 42, 67);
+
+.articleContent li span {
+    color: rgb(193, 42, 67);
     font-size: larger;
 }
-.articleContent{
+
+.articleContent {
     display: flex;
-    
+
 }
-.sameArticle{
+
+.sameArticle {
     display: none;
 }
 
 
 
 /* -----------------My Services------------- */
-#servicesBox{
+#servicesBox {
     margin: 0px 5vw 0px 9vw;
 }
-.title{
-    font-size: 60px; 
+
+.title {
+    font-size: 60px;
     font-weight: 600;
     margin-bottom: 50px;
     width: 100%;
 }
-.myServices{
+
+.myServices {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)) ;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
-    margin: 50px,0px,0px,9vw;
+    margin: 50px, 0px, 0px, 9vw;
 }
-.myServices0{
+
+.myServices0 {
     font-size: 12px;
     padding: 38px;
     margin-bottom: 50px;
     border-radius: 10px;
     background-color: rgba(169, 169, 169, 0.213);
-     transition: 0.8s;
+    transition: 0.8s;
 }
-.myServices0 p{
+
+.myServices0 p {
     margin-bottom: 10px;
     margin-top: 10px;
-    
+
 }
-div svg{
+
+div svg {
     height: 60px;
     stroke-width: 2.5;
 }
-.myServices0:hover{
-    background-color:rgb(193, 42, 67) ;
-    transform:translateY(-22px);
+
+.myServices0:hover {
+    background-color: rgb(193, 42, 67);
+    transform: translateY(-22px);
     transition: 0.8s;
 }
-.myServices0 a{
+
+.myServices0 a {
     text-decoration: none;
     color: white;
 }
@@ -242,58 +284,65 @@ div svg{
 
 /* -------------My Work --------------- */
 
-#mainWork{
+#mainWork {
     margin: 0px 5vw 50px 9vw;
 }
-.myWork{
+
+.myWork {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
-.workContainer0{
+
+.workContainer0 {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
 }
 
-.workContainer0 img{
+.workContainer0 img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
-.layer{
+
+.layer {
     position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 0;  
+    height: 0;
     display: flex;
     padding: 0 46px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
     overflow: hidden;
     transition: 0.8s;
 }
-.layer p{
+
+.layer p {
     font-size: 12px;
     margin: 10px 10px;
 }
-.layer a{
+
+.layer a {
     color: white;
 }
 
-.workContainer0:hover .layer{
-    height: 100%;  
+.workContainer0:hover .layer {
+    height: 100%;
 }
-.workButton{
+
+.workButton {
     display: flex;
     margin-top: 50px;
     justify-content: center;
 }
-.viewMoreBtn{
+
+.viewMoreBtn {
     display: inline-block;
     margin-top: 40px;
     padding: 12px 30px;
@@ -306,56 +355,66 @@ div svg{
     position: relative;
     overflow: hidden;
 }
-.viewMoreBtn:hover{
+
+.viewMoreBtn:hover {
     background: transparent;
     color: #ff004f;
     border: 2px solid #ff004f;
 }
-.viewMoreBtn::before{
+
+.viewMoreBtn::before {
     content: "";
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
     transition: 0.5s;
 }
-.viewMoreBtn:hover::before{
+
+.viewMoreBtn:hover::before {
     left: 100%;
 }
 
 /* ----My contact----My contact----My contact----My contact----- */
 
-#mainContact{
+#mainContact {
     margin: 0px 5vw 50px 9vw;
 }
-.contact{
+
+.contact {
     display: flex;
     width: 100%;
     justify-content: flex-start;
 }
-.contact1{
-     width: 35vw;
+
+.contact1 {
+    width: 35vw;
 }
-.contact1 svg{
-    color:#ff004f;
+
+.contact1 svg {
+    color: #ff004f;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
 }
-.contact1 li{
+
+.contact1 li {
     display: flex;
     gap: 10px;
     align-items: center;
     list-style: none;
 }
-.contact1 a{
+
+.contact1 a {
     color: antiquewhite;
     text-decoration: none;
 }
-.contact1 button{
+
+.contact1 button {
     margin-top: 20px;
     height: 50px;
     width: 140px;
@@ -366,31 +425,36 @@ header{
     font-weight: 500;
 }
 
-.contact2{
+.contact2 {
     width: 60vw;
     margin-left: 5vw;
 }
-.contact2 form{
+
+.contact2 form {
     margin-top: 10px;
 }
-.contact2 form input{
+
+.contact2 form input {
     width: 100%;
     height: 50px;
-    background-color:rgba(169, 169, 169, 0.213);
+    background-color: rgba(169, 169, 169, 0.213);
     border: 0px;
     border-radius: 5px;
     font-size: 17px;
     margin-bottom: 10px;
+     color: antiquewhite;
 }
-.contact2 textarea{
+
+.contact2 textarea {
     width: 100%;
-    background-color:rgba(169, 169, 169, 0.213);
+    background-color: rgba(169, 169, 169, 0.213);
     border: 0px;
     border-radius: 5px;
     font-size: 17px;
-    color: antiquewhite;
+     color: antiquewhite;
 }
-.contact2 button{
+
+.contact2 button {
     margin-top: 20px;
     height: 50px;
     width: 140px;
@@ -400,102 +464,359 @@ header{
     color: antiquewhite;
     font-weight: 500;
 }
-.listclass svg:hover{
+
+.listclass svg:hover {
     transform: translateY(-5px);
     color: #ff004f;
     transition: 0.4s;
 }
-.listclass svg{
+
+.listclass svg {
     color: rgba(169, 169, 169, 0.665);
-     transition: 0.4s;
+    transition: 0.4s;
+}
+
+.hiremebtn{
+    min-width: 165px;
+}
+
+#msg{
+    color: #61b752;
+    font-weight: 700;
+    display: block;
 }
 
 /* ------Responsive------------Responsive------------Responsive------------Responsive------------Responsive------ */
 
 
+/* ---- Tablet: 769px – 1024px ---- */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo {
+        margin-left: 4vw;
+    }
+
+    .nav {
+        width: 60vw;
+    }
+
+    .nav ul {
+        margin: 34px 3vw 60px 0px;
+    }
+
+    .heading1 {
+        font-size: 22px;
+    }
+
+    .heading2,
+    .heading4 {
+        font-size: 42px;
+    }
+
+    .heading3 {
+        font-size: 42px;
+    }
+
+    .article1 {
+        margin-left: 4vw;
+    }
+
+    .myimage {
+        height: 55vh;
+        width: 48vw;
+    }
+
+    .section1 {
+        margin-right: 2vw;
+    }
+
+    .aside2 img {
+        width: 34vw;
+        height: auto;
+    }
+
+    .article2 {
+        margin: 0 3vw;
+    }
+
+    .aboutpara {
+        font-size: 42px;
+    }
+
+    .articleButton {
+        margin: 25px 0;
+    }
+
+    #servicesBox {
+        margin: 0 3vw 0 4vw;
+    }
+
+    #mainWork {
+        margin: 0 3vw 50px 4vw;
+    }
+
+    #mainContact {
+        margin: 0 3vw 50px 4vw;
+    }
+
+    .contact1 {
+        width: 42vw;
+    }
+
+    .contact2 {
+        width: 50vw;
+    }
+}
+
+
+/* ---- Mobile: ≤ 768px ---- */
 @media (max-width: 768px) {
 
-svg.smallNav{
-    display: block;
-    height: 28px;
-    width: 28px;
-    position: absolute;
-    top: 15px;
+    /* --- Nav --- */
+    header {
+        position: relative;
+    }
+
+    .nav {
+        width: auto;
+    }
+
+    svg.smallNav {
+        display: block;
+        height: 28px;
+        width: 28px;
+    }
+
+    svg.smallNav2 {
+        position: absolute;
+        right: 16px;
+        top: 20px;
+        z-index: 10;
+    }
+
+    svg.smallNav1 {
+        position: absolute;
+        right: 16px;
+        top: 20px;
+        z-index: 20;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: min(75vw, 280px);
+        background-color: #ff004f;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+        overflow-y: auto;
+        z-index: 15;
+        padding-top: 60px;
+        margin: 0;
+    }
+
+    .nav ul.open {
+        transform: translateX(0);
+    }
+
+    .nav ul li {
+        margin-top: 0;
+        padding: 18px 24px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    /* --- Hero --- */
+    /* --- Hero (stays side-by-side 575px–768px) --- */
+    .heading1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .heading2,
+    .heading4 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .heading3 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .myimage {
+        max-height: 250px;
+        object-fit: cover;
+        width: 44vw;
+        border-radius: 20px;
+    }
+
+    .article1 {
+        margin-left: 4vw;
+        width: 50vw;
+    }
+
+    .button {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+
+
+    /* --- About (stays side-by-side 575px–768px) --- */
+    .section1{
+        gap: 0px
+    }
+    .aside2 img {
+        width: 36vw;
+        height: auto;
+    }
+
+    .article2 {
+        margin: 0 3vw;
+    }
+
+    .aboutpara {
+        font-size: 30px;
+    }
+
+    .articleButton {
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0;
+    }
+
+    .articleButton0 {
+        margin-right: 0;
+    }
+
+    /* --- Services --- */
+    #servicesBox {
+        margin: 0 4vw;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    /* --- Portfolio --- */
+    #mainWork {
+        margin: 0 4vw 50px;
+    }
+
+    /* --- Contact --- */
+    #mainContact {
+        margin: 0 4vw 50px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact1 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .contact2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* --- Logo --- */
+    .logo {
+        margin: 14px 0 0 4vw;
+        width: auto;
+    }
+}
+
+
+/* ---- Small mobile: ≤ 574px — About image stacks alone --- */
+@media (max-width: 574px) {
+
+    /* --- Hero image stacks alone below 574px --- */
+    .section1 {
+        flex-direction: column;
+        margin: 20px 4vw 0;
+    }
+
+    .article1 {
+        width: 100%;
+        margin: 20px 0 0 0;
+        padding: 0 4vw;
+    }
+
+    .heading1 {
+        font-size: 18px;
+    }
+
+    .heading2,
+    .heading4 {
+        font-size: 28px;
+    }
+
+    .heading3 {
+        font-size: 28px;
+    }
+
+    .aside1 {
+        width: 100%;
+    }
+
+    .myimage {
+        display: block;
+        margin: 20px auto 0;
+        height: auto;
+        width: 88vw;
+        border-radius: 20px;
+    }
+
+    #section2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1{
+        flex-direction: column-reverse;
+    }
+
+    .aside2 {
+        margin: 0 auto 24px;
+    }
+
+    .aside2 img {
+        width: 88vw;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    .article2 {
+        margin: 0 4vw;
+        width: 92vw;
+    }
+
+    .aboutpara {
+        font-size: 30px;
+    }
+    .articleButton{
+        justify-content: center;
+        gap:5vw;
+    }
     
-}
-svg.smallNav2{
-    position: absolute;
-    right: -28vw;
-    z-index: -1;
-    top: 24px;
-}
-svg.smallNav1{
-    position: absolute;
-    top: 30px;
-    z-index: 2;
-    
-}
-header{
-    position: relative;
-}
-.nav ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 20px;
-    position:absolute;  
-    height: 144vh;
-    width: 58.5vw;
-    top: -155vh;
-    background-color: #ff004f;
-    left: 74vw;
-    transition: 0.8s;
-    overflow-y: hidden;
-}
-.nav ul li{
-    margin-top: 40px;
-    padding-bottom: 30px;
-    padding-left: 15px;   
-}
-.heading1{
-    font-size: 18px;
-    font-weight: 500;
-}
-.heading2,.heading4{
-    font-size:30px; 
-    font-weight: 700;
-}
-.heading3{
-    color:rgb(193, 42, 67);
-    font-size:30px;
-    font-weight: 700;
-}
-.article1{
-    width: 130%;
-    margin-top: 20px;
-    margin-left: 7vw;
-}
-.section1{
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 20px 2vw 0px 0vw;
-}
-.myimage{
-    margin-top: 20px;
-    margin-left: 7vw;
-    height: 53vh; 
-    width: 124vw; 
-    border-radius: 30px;
-}
+    .articleButton > button{
+        font-size: 14px;
+        color: #c12a43;;
+    }
+    .articleContent{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
-.button{
-    margin-top: 30px;
-    border-radius: 5px;
-    z-index: -1;
-}
-
-
-/* --------About section-----------------About section-----------------About section--------- */
-
+    .myWork{
+        row-gap: 40px;
+    }
 
 }
