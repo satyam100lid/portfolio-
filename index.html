@@ -49,14 +49,14 @@ fill="currentColor" viewBox="2 2 20 20" >
                         <p>
                 <span class="heading1">Frontend Developer</span><br><span class="heading2">Hi, I'm </span><span class="heading3">Satyam👋</span><br>
                             <span class="heading4"> From India</span><br>I build responsive, user-friendly, and modern websites with clean code and intuitive design. Focused on performance, accessibility, and seamless user experience. <br>
-                            <a onclick="closemenu()"href="#mainContact"><button class="viewMoreBtn button">Hire Me</button></a>
+                            <a onclick="closemenu()"href="#mainContact"><button class="viewMoreBtn button hiremebtn">Hire Me</button></a>
                             <a onclick="closemenu()" href="#mainWork"><button class="viewMoreBtn button">View Portfolio</button></a>
                         </p>
                     </div>
                 </article>
                 <aside>
                     <div class="aside1">
-                        <img class="myimage" src="backgroundImage.jpeg" alt="myImage">
+                        <img class="myimage" src="Images/backgroundImage.jpeg" alt="myImage">
                     </div>
                 </aside>
             </div>
@@ -66,7 +66,7 @@ fill="currentColor" viewBox="2 2 20 20" >
         <section>
             <div id="section2">
                 <aside>
-                    <div class="aside2"><img src="Image1.jpg" alt=""></div>
+                    <div class="aside2"><img src="Images/Image1.jpg" alt=""></div>
                 </aside>
                 <article>
                     <div class="article2">
@@ -120,7 +120,7 @@ fill="currentColor" viewBox="2 2 20 20" >
                     <p>
                         I build responsive and user-friendly websites using HTML, CSS, and JavaScript. I focus on clean
                         design, mobile responsiveness, and smooth user experience.</p>
-                    <a href="#">Learn more</a>
+                    <a href="#">Read more</a>
                 </div>
                 <div class="myServices2 myServices0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -131,7 +131,7 @@ fill="currentColor" viewBox="2 2 20 20" >
                     <p>I design simple and clean website layouts with a focus on user experience and modern UI trends. I
                         ensure the website looks good and is easy to use.
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="#">Read more</a>
                 </div>
                 <div class="myServices3 myServices0">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
@@ -142,7 +142,7 @@ fill="currentColor" viewBox="2 2 20 20" >
                     <p style="font-size: 25px; font-weight: 500;">Shopify Developer </p>
                     <p>I create and customize basic Shopify stores, including product setup, theme customization, and
                         homepage design.</p>
-                    <a href="#">Learn more</a>
+                    <a href="#">Read more</a>
                 </div>
             </div>
         </div>
@@ -155,7 +155,7 @@ fill="currentColor" viewBox="2 2 20 20" >
             <div class="work">
                 <p class="title">My Work</p>
                 <div class="myWork">
-                    <div class="workContainer1 workContainer0"><img src="Project 1.png">
+                    <div class="workContainer1 workContainer0"><img src="Images/Project 1.png">
                         <div class="layer">
                             <h3>Shopify E-commerce Store</h3>
                             <p>Responsive Shopify store with product pages and modern UI. <br>Password :- shauts123</p>
@@ -168,7 +168,7 @@ fill="currentColor" viewBox="2 2 20 20" >
                                 </svg></a>
                         </div>
                     </div>
-                    <div class="workContainer2 workContainer0"><img src="Project 2.png">
+                    <div class="workContainer2 workContainer0"><img src="Images/Project 2.png">
                         <div class="layer">
                             <h3>CG Webpage</h3>
                             <p>Fully responsive website created using HTML and CSS with a modern and user-friendly
@@ -183,7 +183,7 @@ fill="currentColor" viewBox="2 2 20 20" >
                                 </svg></a>
                         </div>
                     </div>
-                    <div class="workContainer3 workContainer0"><img src="Project 3.png">
+                    <div class="workContainer3 workContainer0"><img src="Images/Project 3.png">
                         <div class="layer">
                             <h3>Sahara Webpage</h3>
                             <p>Clean and responsive web page built with HTML and CSS, optimized for all screen sizes.
@@ -266,11 +266,12 @@ fill="currentColor" viewBox="2 2 20 20" >
 
                 </div>
                 <div class="contact2">
-                    <form>
-                        <input type="text" placeholder=" Your Name" required>
-                        <input type="email" placeholder=" Your Email" required>
-                        <textarea name="Message" rows="7" placeholder=" Your Message" required></textarea>
-                        <button>Submit</button>
+                    <form name="Contact form of Satyam portfolio">
+                        <input  type="text" name="Name" placeholder=" Your Name" required>
+                        <input type="email" name="Email" placeholder=" Your Email" required>
+                        <textarea name="Message" rows="7" placeholder=" Your Message" ></textarea>
+                        <button type="submit" >Submit</button> <br> <br>
+                        <span id="msg"></span>
                     </form>
                 </div>
             </div>
@@ -354,24 +355,46 @@ fill="currentColor" viewBox="2 2 20 20" >
                 mybtn1.classList.remove("active")
                 mybtn2.classList.remove("active")
             }
-if (window.innerWidth <= 768){
-   let navigation = document.getElementById("navOperator");
-   
- 
-    function openmenu(){
-    navigation.style.transform = "translatey(100%)";
+let navigation = document.getElementById("navOperator");
+
+function openmenu() {
+    navigation.classList.add("open");
+}
+
+function closemenu() {
+    navigation.classList.remove("open");
 }
 
 
-function closemenu(){
-     navigation.style.transform = "translatey(-100%)";
-     navigation.style.transition = "1s";
-}
-
- }
+document.addEventListener("click", function(e) {
+    if (navigation.classList.contains("open")) {
+        let nav = document.querySelector(".nav");
+        if (!nav.contains(e.target)) {
+            navigation.classList.remove("open");
+        }
+    }
+});
 
         </script>
-      
+      <script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbxD-iN2g-x8NunkKXDj6ADAQm-RUUtDuO2dUILn20f1UnJ8XtqGuKHZvL0nCpkeHoWJJg/exec'
+	const form = document.forms['Contact form of Satyam portfolio']
+    const msg = document.getElementById("msg")
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => {
+                msg.innerHTML = "Message sent successfullly"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },2000)
+                form.reset()
+            })
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
     </div>
 </body>
 
